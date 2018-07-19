@@ -7,4 +7,4 @@ python:
       - pip install -r requirements.txt
       # command to run tests
   script:
-      - pytest tests.py 
+      - pytest $TRAVIS_BUILD_DIR/tests.py 
