@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+Flask-migrate
+psycopg2
+nosetests # for testing
+pytest # for testing
+hypothesis # for testing
+requests # for testing

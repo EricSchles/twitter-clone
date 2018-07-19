@@ -1,0 +1,9 @@
+import requests
+from app import app
+
+
+def test_index():
+    assert requests.get("http://localhost:5000/").status_code == 200
+    assert requests.get("http://localhost:5000/").text == requests.get("http://localhost:5000/index").text
+    assert requests.get("http://localhost:5000/").text.lower() == "hello world" 
+    
