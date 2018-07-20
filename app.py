@@ -12,6 +12,10 @@ def publish():
     posting = request.form["posting"]
     return posting
 
+@app.route("/whatever", methods=["GET", "POST"])
+def whatever():
+    return "whatever"
+
 
 if __name__ == '__main__':
     app.run()
